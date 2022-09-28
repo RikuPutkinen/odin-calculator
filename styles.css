@@ -1,10 +1,20 @@
-* {
+.button, #screen {
   border: solid 2px black;
 }
 
+body {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
 #calculator {
-  width: 40vmin;
-  height: 60vmin;
+  margin: auto;
+  width: 400px;
+  height: 600px;
   display: grid;
   grid-template-areas: 
     "screen screen screen screen"
@@ -23,8 +33,9 @@
   font-size: 70px;
 }
 
-.operator {
+.operator, #equals {
   background-color: blue;
+  color: white;
 }
 
 #screen {
